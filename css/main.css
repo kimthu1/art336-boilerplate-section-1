@@ -9,16 +9,25 @@ Main Rules
   min-height: 50px;
 }
 
+.section-header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.outer {
+  background-color: #d9d9d9;
+}
+
 /*
 12 Column Mobile First Grid System
 */
-.row {
+.row, .row-no-gutter {
   margin: 0 auto;
   max-width: 1140px;
   width: 100%;
 }
 
-.row:after {
+.row:after, .row-no-gutter:after {
   content: "";
   display: table;
   clear: both;
@@ -26,6 +35,7 @@ Main Rules
 
 [class^="col-"] {
   float: left;
+  margin-bottom: 14px;
   width: 100%;
 }
 
@@ -70,6 +80,140 @@ Main Rules
   .row .col-6 {
     width: calc(50% - 14px);
   }
+}
+
+@media only screen and (min-width: 768px) {
+  .row .col-7 {
+    width: calc(58.333333% - 14px);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row .col-8 {
+    width: calc(66.666666% - 14px);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row .col-9 {
+    width: calc(75% - 14px);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row .col-10 {
+    width: calc(83.333333% - 14px);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row .col-11 {
+    width: calc(91.666666% - 14px);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row .col-12 {
+    width: calc(100% - 14px);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row-no-gutter {
+    box-sizing: border-box;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row-no-gutter .col-1 {
+    width: 8.333333%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row-no-gutter .col-2 {
+    width: 16.666666%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row-no-gutter .col-3 {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row-no-gutter .col-4 {
+    width: 33.333333%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row-no-gutter .col-5 {
+    width: 41.666666%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row-no-gutter .col-6 {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row-no-gutter .col-7 {
+    width: 58.333333%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row-no-gutter .col-8 {
+    width: 66.666666%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row-no-gutter .col-9 {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row-no-gutter .col-10 {
+    width: 83.333333%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row-no-gutter .col-11 {
+    width: 91.666666%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row-no-gutter .col-12 {
+    width: 100%;
+  }
+}
+
+.no-bottom-gutter [class^="col-1"] {
+  margin-bottom: 0;
+}
+
+.outer {
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.outer .row:last-of-type [class^="col-1"],
+.outer .row-no-gutter:last-of-type [class^="col-1"] {
+  margin-bottom: 0;
+}
+
+.shift-right {
+  float: right;
 }
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
